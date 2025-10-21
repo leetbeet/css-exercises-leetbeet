@@ -19,6 +19,24 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+  animation-name: drop;
+  animation-duration: 0.8s;
+  transform-origin: top;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes drop {
+  from {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.1);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
 }
 
 ul.dropdown-menu li:hover {
@@ -28,5 +46,3 @@ ul.dropdown-menu li:hover {
 .visible {
   display: block;
 }
-
-
